@@ -7,8 +7,8 @@ const Meeting = () => {
     const payload = {
         meetingNumber: 88415528976,
         role: 0,
-        sdkKey: "0RMUjG4SFSXyaPr7JluJA",
-        sdkSecret: "GrhBfWi2G29gKn0iXcgp3ZmlwiF0g4Hg",
+        sdkKey: process.env.REACT_APP_ZOOM_SDK_KEY,
+        sdkSecret: process.env.REACT_APP_ZOOM_SDK_SECRET,
         passWord: "fau9VQ",
         userName: "Testing",
         userEmail: "wrt.mital@gmail.com",

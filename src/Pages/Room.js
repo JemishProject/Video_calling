@@ -13,8 +13,8 @@ const Room = () => {
 
     useEffect(() => {
         const myMeeting = async () => {
-            const APPID = 339704119;
-            const SERVER_SECRET = '374d52dac581ed25bd8fd140a94604d1';
+            const APPID = process.env.REACT_APP_ZEGO_APPID;
+            const SERVER_SECRET = process.env.REACT_APP_ZEGO_SERVER_SECRET;
             const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
                 APPID,
                 SERVER_SECRET,
